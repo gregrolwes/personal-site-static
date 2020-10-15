@@ -17,12 +17,14 @@ function typeWriter() {
     i++;
     if (i < name.length+12) {
         if (i == 11) {
-            setTimeout(typeWriter, speed+1750);
+            setTimeout(typeWriter, speed+850);
         } else if (i == 17) {
             setTimeout(typeWriter, speed+750);
         } else if (i == 23) {
             setTimeout(typeWriter, speed+750);
         } else if (i == 29) {
+            setTimeout(typeWriter, speed+750);
+        } else if (i == 31) {
             setTimeout(typeWriter, speed+750);
         } else if (i == name.length+11) {
             setTimeout(typeWriter, speed+1000);
