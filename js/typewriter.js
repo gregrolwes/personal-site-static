@@ -1,35 +1,32 @@
-var speed = 90; /* The speed/duration of the effect in milliseconds */
+var speed = 60; /* The speed/duration of the effect in milliseconds */
 
-var name = "greg rowelsrowlesrolwes.";
+var name = "greg rowels rowles rolwes.";
 
 i=0;
-function typeWriter() {
+function confusedTypeWriter() {
     if (i < 11) {
         document.getElementById("name").innerHTML += name.charAt(i);
-    } else if ((i >= 11  && i < 17) || (i >= 23 && i  < 29)) {
+    } else if ((i >= 11  && i < 18) || (i >= 25 && i  < 31)) {
         var current = document.getElementById("name").innerHTML;
         document.getElementById("name").innerHTML = current.slice(0, current.length - 1);
     } else if (i < 29) {
-        document.getElementById("name").innerHTML += name.charAt(i-6);
+        document.getElementById("name").innerHTML += name.charAt(i-7);
     } else {
         document.getElementById("name").innerHTML += name.charAt(i-12);
     }
     i++;
     if (i < name.length+12) {
-        if (i == 11) {
-            setTimeout(typeWriter, speed+850);
-        } else if (i == 17) {
-            setTimeout(typeWriter, speed+750);
-        } else if (i == 23) {
-            setTimeout(typeWriter, speed+750);
-        } else if (i == 29) {
-            setTimeout(typeWriter, speed+750);
-        } else if (i == 31) {
-            setTimeout(typeWriter, speed+750);
+        var long_pause = [11,18,21,25,31,33];
+        var short_pause = [19, 32];
+
+        if (long_pause.includes(i)) {
+            setTimeout(confusedTypeWriter, speed+750);
+        } else if (short_pause.includes(i)) {
+            setTimeout(confusedTypeWriter, speed+50);
         } else if (i == name.length+11) {
-            setTimeout(typeWriter, speed+1000);
+            setTimeout(confusedTypeWriter, speed+1000);
         } else {
-            setTimeout(typeWriter, speed);
+            setTimeout(confusedTypeWriter, speed);
         }
     }
 }
