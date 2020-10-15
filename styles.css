@@ -1,0 +1,39 @@
+@keyframes blink { 
+    50% { border-color: #ffffff; } 
+}
+
+.blink {
+    animation-name: blink ;
+    animation-duration: .53s ;
+    animation-timing-function: step-end ;
+    animation-iteration-count: infinite ;
+    animation-direction: alternate ;
+    animation-delay: 1.25s;
+
+    border-right: 2px solid black;
+    display: inline-block;
+    padding-right: 3px;
+}
+
+.screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 94vh;
+    width: 94vw;
+    margin: 3vh 3vw 3vh 3vw;
+}
+
+.center {
+    width: 40vw;
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+#name {
+    line-height: 50px;
+    font-size: 50px;
+}
