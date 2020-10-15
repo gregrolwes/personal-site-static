@@ -48,8 +48,9 @@ body {
     right: 10px;
 }
 .icon {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
+    margin: 2px;
 }
 
 #name {
@@ -59,6 +60,11 @@ body {
     animation-delay: 6s;
 }
 @media (max-width: 950px) {
+    .icon {
+        width: 25px;
+        height: 25px;
+        margin: 1px;
+    }
     #name {
         line-height: 35px;
         font-size: 25px;
