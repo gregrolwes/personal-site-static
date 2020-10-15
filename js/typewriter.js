@@ -1,4 +1,4 @@
-var speed = 60; /* The speed/duration of the effect in milliseconds */
+var speed = 70; /* The speed/duration of the effect in milliseconds */
 
 var name = "greg rowles rolwes.";
 
