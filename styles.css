@@ -11,6 +11,10 @@ body {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 .blink {
     animation-duration: .53s ;
     animation-timing-function: step-end ;
