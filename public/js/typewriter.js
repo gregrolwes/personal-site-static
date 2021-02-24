@@ -10,19 +10,17 @@ function confusedTypeWriter() {
         var current = document.getElementById("name").innerHTML;
         document.getElementById("name").innerHTML = current.slice(0, current.length - 1);
     } else {
-        document.getElementById("name").innerHTML += name.charAt(i-5);
+        document.getElementById("name").innerHTML += name.charAt(i-4);
     }
     i++;
     if (i < name.length+12) {
-        var long_pause = [11,18,21,25];
-        var short_pause = [19];
+        var long_pause = [11,15,19];
+        var short_pause = [];
 
         if (long_pause.includes(i)) {
-            setTimeout(confusedTypeWriter, speed+750);
+            setTimeout(confusedTypeWriter, speed+500);
         } else if (short_pause.includes(i)) {
             setTimeout(confusedTypeWriter, speed+50);
-        } else if (i == name.length+11) {
-            setTimeout(confusedTypeWriter, speed+1000);
         } else {
             setTimeout(confusedTypeWriter, speed);
         }
