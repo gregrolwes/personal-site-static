@@ -52,7 +52,6 @@ a {
 #name {
     line-height: 60px;
     font-size: 50px;
-    min-width: 183px;
 }
 
 @media (max-width: 950px) {
