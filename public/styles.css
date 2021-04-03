@@ -9,6 +9,7 @@ body {
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 .screen {
@@ -39,20 +40,27 @@ a {
     margin: 2px;
 }
 
+.nav {
+    margin: 25px 0px;
+    min-width: 183px;
+}
+.nav-item {
+    margin: 0px 15px 0px 15px;
+    display: inline;
+}
+
 #name {
     line-height: 60px;
     font-size: 50px;
-}
-
-#cta {
-    margin-top: 10px;
+    min-width: 183px;
 }
 
 @media (max-width: 950px) {
     .icon {
-        width: 25px;
-        height: 25px;
         margin: 1px;
+    }
+    .nav-item {
+        display: block;
     }
     #name {
         line-height: 35px;
