@@ -14,11 +14,6 @@ a {
   display: none !important;
 }
 
-/* -------------------------------- 
-
-Main Components 
-
--------------------------------- */
 .cd-horizontal-timeline {
   opacity: 0;
   margin: 2em auto;
@@ -38,8 +33,7 @@ Main Components
 .cd-horizontal-timeline .timeline {
   position: relative;
   height: 200px;
-  width: 90%;
-  max-width: 900px;
+  width: 90vw;
   margin: 0 auto;
 }
 .cd-horizontal-timeline .events-wrapper {
@@ -321,6 +315,17 @@ Main Components
 .cd-horizontal-timeline .events-content em,
 .cd-horizontal-timeline .events-content p {
   line-height: 1.6;
+}
+.cd-horizontal-timeline .events-content div {
+  display: flex;
+  align-items: center;
+}
+.cd-horizontal-timeline .events-content div img {
+  width: 50px;
+  margin: 20px;
+}
+.cd-horizontal-timeline .events-content div #wide {
+  width: 100px;
 }
 @media only screen and (min-width: 768px) {
   .cd-horizontal-timeline .events-content h2 {
