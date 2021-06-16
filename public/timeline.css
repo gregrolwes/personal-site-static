@@ -37,12 +37,17 @@ Main Components
 }
 .cd-horizontal-timeline .timeline {
   position: relative;
-  height: 100px;
+  height: 200px;
   width: 90%;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 .cd-horizontal-timeline .events-wrapper {
+  position: relative;
+  height: 50%;
+  top: 25%;
+}
+.cd-horizontal-timeline .margin-40 {
   position: relative;
   height: 100%;
   margin: 0 40px;
@@ -138,7 +143,7 @@ Main Components
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
-  bottom: -5px;
+  bottom: -7px;
   height: 12px;
   width: 12px;
   border-radius: 50%;
