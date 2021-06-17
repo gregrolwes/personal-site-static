@@ -31,6 +31,14 @@ p {
   width: 100vw;
 }
 
+.home {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  font-size: 18px;
+  color: white;
+}
+
 .center {
   width: 40vw;
   text-align: center;
@@ -54,6 +62,7 @@ p {
 .nav-item {
   margin: 10px 15px 10px 15px;
   display: inline;
+  font-size: 18px;
 }
 .block {
   display: block;
@@ -68,12 +77,16 @@ p {
   font-size: 50px;
 }
 
-@media (max-width: 950px) {
+@media only screen and (max-width: 950px) {
+  .home {
+    font-size: 32px;
+  }
   .icon {
     margin: 1px;
   }
   .nav-item {
     display: block;
+    font-size: 32px;
   }
   #name {
     line-height: 35px;

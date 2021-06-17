@@ -13,10 +13,24 @@
     />
     <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="./timeline.css" />
+    <link rel="stylesheet" href="./animate.css" />
   </head>
   <body>
     <div class="screen no-scroll">
-      <section class="cd-horizontal-timeline">
+      <div class="header">
+        <a href="index.html" onclick="location.replace('index.html'),'_top'"
+          ><div class="home">Home</div></a
+        >
+        <div class="icons">
+          <a href="https://twitter.com/gregrolwes" target="_blank">
+            <img class="icon" src="assets/twitter.svg" alt="Twitter" />
+          </a>
+          <a href="https://github.com/gregrolwes" target="_blank">
+            <img class="icon" src="assets/github.svg" alt="GitHub" />
+          </a>
+        </div>
+      </div>
+      <section class="cd-horizontal-timeline fade-in">
         <div class="timeline">
           <div class="margin-40">
             <div class="events-wrapper">
@@ -90,7 +104,10 @@
             <li class="selected" data-date="15/05/2019">
               <h2>Automation Engineering Intern</h2>
               <em>June 2019 - August 2019</em>
-              <p>The Stack:</p>
+              <p>
+                Developed applications to automate repetitive or time-intensive
+                tasks within the organization.
+              </p>
               <div>
                 <a
                   href="https://reactjs.org/"
@@ -119,7 +136,22 @@
             <li data-date="20/08/2019">
               <h2>Computer Vision Research</h2>
               <em>September 2019 - June 2021</em>
-              <p>The Stack:</p>
+              <p>
+                Developed solutions for the
+                <a
+                  href="https://arxiv.org/pdf/2106.05746.pdf"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >locating of human trafficking victims</a
+                >
+                and
+                <a
+                  href="https://arxiv.org/pdf/2106.05748.pdf"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >biofuel crop classification</a
+                >.
+              </p>
               <div>
                 <a
                   href="https://www.python.org/"
@@ -148,7 +180,18 @@
             <li data-date="01/11/2019">
               <h2>Sales Forecasting Intern</h2>
               <em>November 2019 - May 2020</em>
-              <p>The Stack:</p>
+              <p>
+                Rewrote
+                <a
+                  href="https://www.ab-inbev.com/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >AB InBev's</a
+                >
+                legacy sales forecasting pipeline for a 600% reduction in
+                runtime along with increased accuracy for events such as
+                holidays.
+              </p>
               <div>
                 <a
                   href="https://www.r-project.org/"
@@ -170,7 +213,17 @@
             <li data-date="01/04/2020">
               <h2>Web Developer and Designer</h2>
               <em>April 2020 - August 2020</em>
-              <p>The Stack:</p>
+              <p>
+                Designed and developed a number of breakthrough features such as
+                <a
+                  href="https://www.clockwork.ai/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >Clockwork's</a
+                >
+                metrics projections, redesigned the majority of their front-end,
+                and rewrote their broken payments module.
+              </p>
               <div>
                 <a
                   href="https://angular.io/"
@@ -206,7 +259,17 @@
             <li data-date="01/01/2021">
               <h2>Product Manager</h2>
               <em>January 2021 - Present</em>
-              <p>The Stack</p>
+              <p>
+                Managing the research, design, and development of a tool for
+                tracking, quantifying, and communicating value-added for
+                <a
+                  href="https://www.graybar.com/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >Graybar's</a
+                >
+                customers.
+              </p>
               <div>
                 <a
                   href="https://reactjs.org/"
@@ -249,7 +312,10 @@
             <li data-date="01/06/2021">
               <h2>Data Analytics Developer</h2>
               <em>June 2021 - Present</em>
-              <p>The Stack:</p>
+              <p>
+                Working with Graybar's data discovery team to ingest data and
+                build predictive models.
+              </p>
               <div>
                 <a
                   href="https://spark.apache.org/"
