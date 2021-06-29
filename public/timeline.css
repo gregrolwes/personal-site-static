@@ -59,21 +59,13 @@ a {
 }
 .cd-horizontal-timeline .events-wrapper::before {
   left: 0;
-  background-image: -webkit-linear-gradient(
-    left,
-    #00072d,
-    rgba(248, 248, 248, 0)
-  );
-  background-image: linear-gradient(to right, #00072d, rgba(248, 248, 248, 0));
+  background-image: -webkit-linear-gradient(left, #00072d, rgba(0, 0, 0, 0));
+  background-image: linear-gradient(to right, #00072d, rgba(0, 0, 0, 0));
 }
 .cd-horizontal-timeline .events-wrapper::after {
   right: 0;
-  background-image: -webkit-linear-gradient(
-    right,
-    #00072d,
-    rgba(248, 248, 248, 0)
-  );
-  background-image: linear-gradient(to left, #00072d, rgba(248, 248, 248, 0));
+  background-image: -webkit-linear-gradient(right, #00072d, rgba(0, 0, 0, 0));
+  background-image: linear-gradient(to left, #00072d, rgba(0, 0, 0, 0));
 }
 .cd-horizontal-timeline .events {
   /* this is the grey line/timeline */
