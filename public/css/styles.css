@@ -1,11 +1,11 @@
 @font-face {
   font-family: jetbrains-regular;
-  src: url(assets/JetBrainsMono-Regular.woff);
+  src: url(../assets/JetBrainsMono-Regular.woff);
 }
 
 body {
   margin: 0;
-  font-family: jetbrains-regular;
+  font-family: jetbrains-regular, monospace;
 }
 
 a {
@@ -24,6 +24,8 @@ p {
   overflow-x: hidden;
   background-color: #00072d;
   color: white;
+  width: 100vw;
+  min-height: 100vh;
 }
 
 .no-scroll {
@@ -68,7 +70,7 @@ p {
   display: block;
 }
 
-.essay {
+.content {
   margin: 10%;
 }
 
